@@ -84,6 +84,16 @@
   }
 }
 
+.shape-dots{
+  position: absolute;
+  top: 80%;
+  left: 60%;
+    ::ng-deep svg {
+    width: 140px;
+    height: auto;
+  }
+}
+
 .login-form {
   direction: rtl;
   top: -90px;
