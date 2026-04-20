@@ -31,6 +31,7 @@ export class Login {
   login() {
     if(this.Form().invalid){
       this.Form().markAllAsTouched()
+      return;
     }
     this.Data.post('auth/company/login',this.Form().value).subscribe((res)=>{
       console.log(res);
