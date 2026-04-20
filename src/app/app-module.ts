@@ -1,21 +1,70 @@
+// import { HttpClient } from '@angular/common/http';
+// import { NgModule, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
+// import { BrowserModule } from '@angular/platform-browser';
+
+// import { AppRoutingModule } from './app-routing-module';
+// import { App } from './app';
+
+// @NgModule({
+//   declarations: [
+//     App
+//   ],
+//   imports: [
+//     BrowserModule,
+//     AppRoutingModule,
+//     HttpClient
+
+//   ],
+//   providers: [
+//     provideBrowserGlobalErrorListeners(),
+//     provideZonelessChangeDetection()
+//   ],
+//   bootstrap: [App]
+// })
+// export class AppModule { }
+
+
+
+
 import { NgModule, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import Aura from '@primeuix/themes/aura';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
+import { RouterModule } from '@angular/router';
+import { CoreModule } from './core/core-module';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { SharedModule } from './shared/shared-module';
+import { providePrimeNG } from 'primeng/config';
+
+
 
 @NgModule({
-  declarations: [
-    App
-  ],
+  declarations: [App],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([]),
+    CoreModule,
+    SharedModule,
   ],
   providers: [
+    provideZonelessChangeDetection(),
+
     provideBrowserGlobalErrorListeners(),
-    provideZonelessChangeDetection()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(withInterceptorsFromDi()),
+    provideAnimationsAsync(),
+    providePrimeNG({
+      theme: {
+        preset: Aura,
+        options: {
+          darkModeSelector: 'none',
+        },
+      },
+    }),
   ],
-  bootstrap: [App]
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

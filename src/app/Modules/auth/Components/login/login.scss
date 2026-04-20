@@ -1,0 +1,160 @@
+@use'../../../../../GlopalStyle.scss';
+
+.login-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f2f3fb;
+}
+.side_img {
+  z-index: 999;
+}
+
+.green-top-left {
+  position: absolute;
+  left: 0;
+  top: -40px;
+  z-index: -1;
+}
+
+.blue-top-left {
+  position: absolute;
+  z-index: 999;
+  top: -20px;
+  left: 0;
+  ::ng-deep svg {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.bottom-blue-shape {
+  position: absolute;
+  bottom: -20px;
+  left: 30%;
+  ::ng-deep svg {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.orange_svg {
+  position: absolute;
+  bottom: -32px;
+  left: 45%;
+  z-index: -1;
+  ::ng-deep svg {
+    width: 500px;
+    height: auto;
+  }
+}
+
+.green_svg {
+  position: absolute;
+  bottom: -90px;
+  left: 68.5%;
+  z-index: -88;
+}
+
+.man_img {
+  position: absolute;
+  left: 18%;
+  top: 9%;
+  img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.team_img {
+  z-index: 999;
+  position: absolute;
+  top: 26%;
+  left: 6%;
+  img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.login-form {
+  direction: rtl;
+  top: -90px;
+  z-index: 999;
+  position: relative;
+  form {
+    width: 400px;
+  }
+  label {
+    font-family: 'Cairo', sans-serif !important;
+  }
+  img{
+    text-align: center;
+    margin: 0 auto ;
+    display: block;
+  }
+  input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .Group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 30px;
+  }
+  button {
+    background-color: #124959;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 0.9;
+    border-radius: 5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+  .side_img {
+    display: none;
+  }
+
+.login-form{
+  top: 0;
+  form {
+    width: 300px;
+  }
+}
+}
+
+
+@media(min-width:767px) and (max-width:1200px){
+  .side_img {
+    display: none;
+  }
+}

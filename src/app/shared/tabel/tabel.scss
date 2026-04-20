@@ -1,0 +1,43 @@
+th {
+  background: linear-gradient(180deg, #b5a863 0%, #8b7a3a 100%) !important;
+  color: var(--white-color) !important;
+  position: sticky !important;
+  top: 0;
+}
+
+::ng-deep .p-paginator-page.p-paginator-page-selected {
+  color: var(--white-color) !important;
+  background-color: var(--accent-gold) !important;
+}
+
+::ng-deep .p-datatable-sort-icon {
+  color: var(--white-color) !important;
+}
+
+.table-header-content {
+  display: flex;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+.admin-badge {
+   text-align: center;
+  background-color: var(--color-mint-light);
+    color: var(--color-forest-dark);
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(21, 87, 36, 0.2);
+}
+
+.moderator-badge {
+  background-color: var(--color-info-bg);
+  color: var(--color-info-text);
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  border: 1px solid rgba(0, 64, 133, 0.1);
+}

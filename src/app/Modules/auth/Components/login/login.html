@@ -1,0 +1,50 @@
+<section class="login-container">
+  <div class="side_img">
+    <div class="svg_icon_1">
+      <svg-icon class="shape blue-top-left" src="assets/Svg/Vector.svg"> </svg-icon>
+
+      <svg-icon class="shape green-top-left" src="assets/Svg/Vector_2.svg"> </svg-icon>
+    </div>
+    <div class="man_img">
+      <img src="assets/Img/Rectangle 4743.png" />
+    </div>
+    <div class="team_img">
+      <img src="assets/Img/Rectangle 4744.png" />
+    </div>
+
+    <div class="svg_icon_2">
+      <svg-icon class="shape bottom-blue-shape" src="assets/Svg/Vector_3.svg"> </svg-icon>
+    </div>
+
+    <div class="svg_3">
+      <svg-icon class="shape orange_svg" src="assets/Svg/Vector_4.svg"> </svg-icon>
+      <svg-icon class="shape green_svg" src="assets/Svg/Vector_5.svg"> </svg-icon>
+    </div>
+  </div>
+
+  <div class="login-form">
+    <img height="150" width="150" src="assets/Img/fa460bb4ed56d11f2df053387183da4070050263.png" />
+    <form [formGroup]="Form()" (ngSubmit)="login()">
+      <div class="Group">
+        <label>اسم الأيميل</label>
+        <input formControlName="email" type="text" placeholder="ادخل اسم الأيميل" />
+        @if (getControlName('email')?.touched && getControlName('email')?.invalid) {
+          <div class="wrapper-error">
+            <small class="error">*هذا الحقل مطلوب</small>
+          </div>
+        }
+      </div>
+
+      <div class="Group">
+        <label>كلمة المرور</label>
+        <input formControlName="password" type="password" placeholder="ادخل كلمة المرور" />
+        @if (getControlName('password')?.touched && getControlName('password')?.invalid) {
+          <div class="wrapper-error">
+            <small class="error">*هذا الحقل مطلوب</small>
+          </div>
+        }
+      </div>
+      <button type="submit" class="login-btn">تسجيل الدخول</button>
+    </form>
+  </div>
+</section>
