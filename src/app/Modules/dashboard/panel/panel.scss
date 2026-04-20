@@ -1,0 +1,32 @@
+.content_panel {
+  text-align: right;
+}
+
+.menue {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 20%;
+  background-color: white;
+  z-index: 999;
+}
+
+.content-dashbord {
+  position: relative;
+  margin-right: 20%;
+  height: 100%;
+  width: 80%;
+}
+
+@media (max-width: 1200px) {
+  .menue {
+    width: 0;
+    display: none;
+  }
+
+  .content-dashbord {
+    width: 100%;
+    margin-right: 0;
+  }
+}
