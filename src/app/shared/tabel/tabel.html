@@ -1,10 +1,10 @@
-@if (exsistData() == 'has-data') {
+@if (statusData() == 'has-data') {
+  <div class="table-container">
   <p-table
     [value]="tableData"
     [paginator]="true"
     [rowsPerPageOptions]="[5, 10, 20, 50]"
     [rows]="20"
-    stripedRows
     [tableStyle]="{ 'min-width': '50rem' }"
     [sortOrder]="-1"
   >
@@ -12,15 +12,18 @@
     <ng-template pTemplate="header">
       <tr>
         <ng-container *ngFor="let col of bodytabel">
-          <th [pSortableColumn]="col.value">
+          <th [pSortableColumn]="col.value" style="background-color: #f2f3fb; text-align: center">
             <div class="table-header-content">
-              <!-- {{ col.key | translate }} -->
-               <p-sortIcon [field]="col.value" />
+              {{ col.key }}
+              <p-sortIcon [field]="col.value" />
             </div>
           </th>
         </ng-container>
 
-        <th *ngIf="actionsTpl" style="text-align: center">العمليات</th>
+        <th
+          *ngIf="getTemplate('actions')"
+          style="background-color: #f2f3fb; text-align: center"
+        ></th>
       </tr>
     </ng-template>
 
@@ -29,27 +32,39 @@
     <ng-template pTemplate="body" let-row>
       <tr>
         <ng-container *ngFor="let col of bodytabel">
-          <td [ngClass]="getCellClass(col, row)">
-            {{ formatCell(col.value, row[col.value]) }}
+          <td style="text-align: center">
+            <ng-container
+              *ngTemplateOutlet="
+                getTemplate(col.value) || defaultCell;
+                context: { $implicit: row, column: col }">
+            </ng-container>
+
+            <ng-template #defaultCell>
+              {{ row[col.value] }}
+            </ng-template>
           </td>
         </ng-container>
 
-        <td *ngIf="actionsTpl">
-          <ng-container *ngTemplateOutlet="actionsTpl; context: { $implicit: row }"></ng-container>
+        <td *ngIf="getTemplate('actions')" style="text-align: center">
+          <ng-container *ngTemplateOutlet="getTemplate('actions'); context: { $implicit: row }">
+          </ng-container>
         </td>
       </tr>
     </ng-template>
   </p-table>
 
   <ng-content></ng-content>
-} @else if (exsistData() == 'no-data') {
-  <!-- <app-no-data></app-no-data> -->
+  </div>
+}
+
+@else if (statusData() == 'no-data') {
+  <app-no-data></app-no-data>
 } @else {
   <p-table [value]="$any(loadingData)" [tableStyle]="{ 'min-width': '50rem' }">
     <ng-template pTemplate="header">
       <tr>
         <ng-container *ngFor="let col of bodytabel">
-          <!-- <th>{{ col.key | translate }}</th> -->
+          <th>{{ col.value }}</th>
         </ng-container>
       </tr>
     </ng-template>
