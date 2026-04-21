@@ -1,0 +1,12 @@
+  <app-tabel
+ dir="rtl"
+  [data]="data()"
+  [bodytabel]="bodytabel()"
+  [status_data]="data().length > 0 ? 'has-data' : 'no-data'">
+  <ng-template pTemplate="actions" let-row>
+    <div class="actions">
+      <button aria-label="details" class="group_btn">أنضم</button>
+      <button aria-label="show" class="view_meeting">عرض المحضر</button>
+    </div>
+  </ng-template>
+</app-tabel>

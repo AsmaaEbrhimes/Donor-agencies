@@ -1,0 +1,22 @@
+@use "../../../../../../GlopalStyle.scss";
+
+.actions{
+  display: flex;
+  gap: 5px;
+  button{
+    padding: 10px;
+    border-radius: 5px;
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}
+.group_btn{
+background-color: #063C5E;
+    color: white;
+}
+
+.view_meeting{
+color: #063C5E;
+border: 1px solid #063C5E;
+}
