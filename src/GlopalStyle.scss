@@ -29,7 +29,7 @@
 
 
 
-::placeholder{
+::placeholder , button{
    font-family: 'Cairo', sans-serif;
 }
 
@@ -37,4 +37,11 @@
 input , button{
   border: none;
   outline: none;
+}
+
+
+
+li{
+  list-style: none;
+  text-decoration: none;
 }
