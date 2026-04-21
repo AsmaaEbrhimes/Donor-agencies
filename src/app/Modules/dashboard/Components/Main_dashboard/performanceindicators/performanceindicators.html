@@ -1,24 +1,30 @@
-<app-tabel
-  [data]="data()"
-  [bodytabel]="bodytabel()"
-  [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
->
-  <!-- <ng-template pTemplate="actions" let-row>
-    <div>
-      <button class="btn-details">تفاصيل</button>
-    </div>
-  </ng-template> -->
+<section class="wrapper_section_performanceindecator">
 
-  <ng-template pTemplate="status" let-row>
-    <span
-      class="status-badge"
-      [ngClass]="{
-        ongoing: row.status === 'جاري',
-        completed: row.status === 'مكتمل',
-        stopped: row.status === 'متوقف',
-      }"
-    >
-      {{ row.status }}
-    </span>
-  </ng-template>
-</app-tabel>
+  <div class="header_performanceindicators">
+    <h4>مؤشرات الأداء</h4>
+    <div class="desc_performanceindicators">
+      <p>تم تقييم الأثر بناءا على مؤشرات الأداء السابقة في النظام</p>
+      
+      <svg-icon class="icon-information-circle" src="assets/Svg/information-circle-contained.svg"> </svg-icon>
+    </div>
+  </div>
+
+  <app-tabel
+    [data]="data()"
+    [bodytabel]="bodytabel()"
+    [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+  >
+    <ng-template pTemplate="status" let-row>
+      <span
+        class="status-badge"
+        [ngClass]="{
+          ongoing: row.status === 'جاري',
+          completed: row.status === 'مكتمل',
+          stopped: row.status === 'متوقف',
+        }"
+      >
+        {{ row.status }}
+      </span>
+    </ng-template>
+  </app-tabel>
+</section>
