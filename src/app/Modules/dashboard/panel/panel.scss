@@ -15,8 +15,9 @@
 .content-dashbord {
   position: relative;
   margin-right: 20%;
-  height: 100%;
+  height: 100vh;
   width: 80%;
+  overflow-y: auto;
 }
 
 @media (max-width: 1200px) {
