@@ -1,0 +1,8 @@
+<section class="wrapper_report">
+  @for (item of data(); track $index) {
+    <div class="card">
+      <p class="title">{{ item.title }}</p>
+      <p class="descrption">{{ item.description }}</p>
+    </div>
+  }
+</section>

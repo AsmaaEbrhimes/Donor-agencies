@@ -1,0 +1,23 @@
+.wrapper_report {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  .card{
+    background-color: #F2F3FB;
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid #D5D7E9;
+    cursor: pointer;
+    .title{
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .descrption{
+      font-size: 16px;
+      color: #000000;
+      text-align: left;
+    }
+  }
+}
