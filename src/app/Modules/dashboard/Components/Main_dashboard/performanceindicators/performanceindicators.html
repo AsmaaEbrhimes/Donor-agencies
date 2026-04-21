@@ -1,0 +1,24 @@
+<app-tabel
+  [data]="data()"
+  [bodytabel]="bodytabel()"
+  [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+>
+  <!-- <ng-template pTemplate="actions" let-row>
+    <div>
+      <button class="btn-details">تفاصيل</button>
+    </div>
+  </ng-template> -->
+
+  <ng-template pTemplate="status" let-row>
+    <span
+      class="status-badge"
+      [ngClass]="{
+        ongoing: row.status === 'جاري',
+        completed: row.status === 'مكتمل',
+        stopped: row.status === 'متوقف',
+      }"
+    >
+      {{ row.status }}
+    </span>
+  </ng-template>
+</app-tabel>
