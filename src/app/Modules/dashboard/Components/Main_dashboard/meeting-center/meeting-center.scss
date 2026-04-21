@@ -1,22 +1,103 @@
-@use "../../../../../../GlopalStyle.scss";
+@use '../../../../../../GlopalStyle.scss';
 
-.actions{
+.actions {
   display: flex;
   gap: 5px;
-  button{
+  button {
     padding: 10px;
     border-radius: 5px;
-    &:hover{
+    &:hover {
       opacity: 0.5;
     }
   }
 }
-.group_btn{
-background-color: #063C5E;
-    color: white;
+.group_btn {
+  background-color: #063c5e;
+  color: white;
 }
 
-.view_meeting{
-color: #063C5E;
-border: 1px solid #063C5E;
+.view_meeting {
+  color: #063c5e;
+  border: 1px solid #063c5e;
 }
+
+.wrapper_section_meeting_centerr {
+  border: 2px solid #979797;
+  border-radius: 10px;
+  padding: 10px;
+  .header_meeting_center {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-end;
+    h3 {
+      color: #063c5e;
+      font-weight: bold;
+    }
+    .icon-clock {
+      position: relative;
+     margin-left: 5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

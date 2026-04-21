@@ -1,12 +1,21 @@
+<section class="wrapper_section_meeting_centerr">
+  <div class="header_meeting_center">
+    <h4>مركز الاجتماعات</h4>
+    <svg-icon class="icon-clock" src="assets/Svg/clock-01.svg">
+    </svg-icon>
+  </div>
+
   <app-tabel
- dir="rtl"
-  [data]="data()"
-  [bodytabel]="bodytabel()"
-  [status_data]="data().length > 0 ? 'has-data' : 'no-data'">
-  <ng-template pTemplate="actions" let-row>
-    <div class="actions">
-      <button aria-label="details" class="group_btn">أنضم</button>
-      <button aria-label="show" class="view_meeting">عرض المحضر</button>
-    </div>
-  </ng-template>
-</app-tabel>
+    dir="rtl"
+    [data]="data()"
+    [bodytabel]="bodytabel()"
+    [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+  >
+    <ng-template pTemplate="actions" let-row>
+      <div class="actions">
+        <button aria-label="details" class="group_btn">أنضم</button>
+        <button aria-label="show" class="view_meeting">عرض المحضر</button>
+      </div>
+    </ng-template>
+  </app-tabel>
+</section>
