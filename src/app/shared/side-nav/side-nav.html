@@ -1,0 +1,42 @@
+<section class="menue">
+  <img class="logo-menue" src="assets/Img/logo 8.png" />
+  <ul>
+    @for (item of menue(); track $index) {
+      <li [ngClass]="{'active': $index === 0}">
+        <span>{{ item.name }}</span>
+        <svg-icon class="svg_icon_menue" [src]="item.icon"> </svg-icon>
+      </li>
+    }
+
+    <!-- <li class="active">
+      <span>لوحة التحكم</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/dashboard-square-02.svg"> </svg-icon>
+    </li>
+    <li>
+      <span>المشاريع</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/clipboard.svg"> </svg-icon>
+    </li>
+    <li>
+      <span>المحافظ التمويلية</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/wallet-01.svg"> </svg-icon>
+    </li>
+    <li>
+      <span>التقارير</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/analytics-01.svg"> </svg-icon>
+    </li>
+
+    <li>
+      <span>إدارة الشركات</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/plus-sign-square.svg"> </svg-icon>
+    </li>
+
+    <li>
+      <span>الأستشارات</span>
+      <svg-icon src="assets/Svg/user-group.svg"> </svg-icon>
+    </li>
+    <li>
+      <span>طلبات التمويل</span>
+      <svg-icon class="svg_icon_menue" src="assets/Svg/plus-sign-square.svg"> </svg-icon>
+    </li> -->
+  </ul>
+</section>

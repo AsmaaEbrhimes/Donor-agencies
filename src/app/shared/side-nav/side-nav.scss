@@ -1,0 +1,45 @@
+@use '../../../GlopalStyle.scss';
+
+.logo-menue {
+  text-align: center;
+  margin:20px auto;
+  display: block;
+  z-index: 888888888888888;
+}
+
+ul {
+  padding: 15px;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #124959;
+    gap: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 7px;
+    transition: 0.3s linear;
+    &:hover {
+      background-color: #124959;
+      border-radius: 8px;
+      color: white !important;
+      ::ng-deep svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #124959;
+  border-radius: 8px;
+  color: white !important;
+  padding: 7px;
+  ::ng-deep svg {
+    path {
+      stroke: white;
+    }
+  }
+}
