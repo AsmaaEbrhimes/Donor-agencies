@@ -1,0 +1,96 @@
+@use '../../../../../GlopalStyle.scss';
+
+.meeting_wrapper {
+  background-color: white;
+  margin: 20px;
+  padding: 20px 40px;
+  border-radius: 15px;
+}
+
+.header_meeting {
+  border-bottom: 2px solid #d5d7e9;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  h4 {
+    color: #124959;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .meeting_desc_header {
+    color: #6e6e6e;
+    .icon-information-circle {
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+.content_meeting_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  height: 100%;
+}
+
+.link_google_meet {
+  width: 100%;
+  .card {
+    border: 1px solid #d5d7e9;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    h5 {
+      color: #124959;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    p {
+      color: #455469;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    span {
+      color: #aa5c02;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    a {
+      text-decoration: underline;
+      color: #0760e3;
+      text-align: left;
+    }
+    button {
+      color: #063c5e;
+      border: 1px solid #063c5e;
+      text-align: left;
+      margin-left: 0;
+      width: fit-content;
+      background-color: transparent;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      transition: 0.3s linear;
+      &:hover{
+        background-color: #063c5e;
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+
+:host {
+  ::ng-deep {
+    .custom-calendar {
+      .p-datepicker-calendar td > span {
+        margin-bottom: 15.4px !important;
+      }
+    }
+  }
+}
+

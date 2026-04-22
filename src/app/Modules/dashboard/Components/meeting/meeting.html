@@ -1,0 +1,46 @@
+<section class="meeting_wrapper">
+  <div class="header_meeting">
+    <h4>الأحداث</h4>
+    <p class="meeting_desc_header">
+      <span>هنا تعرض مواعيدك المهمة لهذا اليوم</span>
+      <span
+        ><svg-icon
+          class="icon-information-circle"
+          src="assets/Svg/information-circle-contained.svg"
+        >
+        </svg-icon
+      ></span>
+    </p>
+  </div>
+  <div class="content_meeting_wrapper">
+    <div class="calnder">
+      <p-datepicker
+        [style]="{ width: '100%' }"
+        [minDate]="minDate()"
+        styleClass="custom-calendar w-full"
+        [inline]="true"
+        [showWeek]="false"
+        [firstDayOfWeek]="6"
+      >
+      </p-datepicker>
+    </div>
+
+    <div class="link_google_meet">
+      <div class="card">
+        <h5>شركة ولادة .</h5>
+        <p>لديك لهذا اليوم اجتماع عبر زوم مع شركة ولادة حلم</p>
+        <span>في تمام 3:00 مساءا</span>
+        <a>https://zoom.us/download</a>
+        <button>الاعتذار عن الاجتماع</button>
+      </div>
+
+      <div class="card">
+        <h5>شركة ولادة .</h5>
+        <p>لديك لهذا اليوم اجتماع عبر زوم مع شركة ولادة حلم</p>
+        <span>في تمام 3:00 مساءا</span>
+        <a>https://zoom.us/download</a>
+        <button>الاعتذار عن الاجتماع</button>
+      </div>
+    </div>
+  </div>
+</section>
