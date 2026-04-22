@@ -1,0 +1,31 @@
+<p-dialog
+  [(visible)]="visible"
+  [modal]="true"
+  [breakpoints]="{ '1199px': '50vw', '575px': '90vw' }"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="onDialogCloseHandler()"
+>
+  <div class="overlay">
+    <div class="modal">
+      <div class="corner-tl-inner"></div>
+      <div class="corner-tr"></div>
+      <div class="corner-tr-inner"></div>
+      <div class="corner-bl"></div>
+      <div class="corner-bl-inner"></div>
+      <div class="corner-br-inner"></div>
+
+      <div class="modal-body">
+        <img src="assets/Img/logo 8.png" />
+        <span>مختبرات حقق الاجتماعية</span>
+
+        <p class="question">هل انت متأكد من انك تريد تسجيل الخروج</p>
+
+        <div class="buttons">
+          <button class="btn btn-confirm">موافق</button>
+          <button class="btn btn-cancel" (click)="onDialogCloseHandler()">الغاء</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-dialog>
