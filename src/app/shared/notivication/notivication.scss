@@ -1,0 +1,27 @@
+.wrapper_notificatio {
+  height: 330px;
+  overflow-y: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #d5d7e9;
+  border-radius: 16px;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: #f2f3fb;
+  }
+  p {
+    white-space: normal;
+  }
+}
+
+.active {
+  background-color: #f2f3fb;
+}
