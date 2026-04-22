@@ -10,8 +10,13 @@ import { DrawerModule } from 'primeng/drawer';
 import { SideNav } from './side-nav/side-nav';
 import { DatePipe } from '@angular/common';
 import { NoData } from './no-data/no-data';
+import { PopoverModule } from 'primeng/popover';
+import { Notivication } from './notivication/notivication';
+import { Logout } from './logout/logout';
+import { DialogModule } from 'primeng/dialog';
+
 @NgModule({
-  declarations: [Tabel, Header, SideNav, NoData],
+  declarations: [Tabel, Header, SideNav, NoData, Notivication, Logout],
   imports: [
     CommonModule,
     SharedRoutingModule,
@@ -19,7 +24,8 @@ import { NoData } from './no-data/no-data';
     SkeletonModule,
     AngularSvgIconModule.forRoot(),
     DrawerModule,
-
+    PopoverModule,
+    DialogModule
   ],
   exports: [Tabel, Header, SideNav,NoData],
   providers: [DatePipe],
