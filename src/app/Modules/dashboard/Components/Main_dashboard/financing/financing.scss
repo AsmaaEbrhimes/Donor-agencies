@@ -1,0 +1,103 @@
+.search_about_project {
+  width: 100%;
+  div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  label {
+    color: #124959;
+    font-weight: bolder;
+    margin-bottom: 5px;
+  }
+}
+
+.wrapper_finacing {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5fr 2fr 0.7fr;
+}
+
+.finicing_cards {
+  .card {
+    background-color: #f2f3fb;
+    padding: 24px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 1px solid #d5d7e9;
+    cursor: pointer;
+    .title {
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .descrption {
+      font-size: 16px;
+      color: #000000;
+      text-align: left;
+    }
+  }
+}
+
+.finicing_charts {
+  display: block;
+  text-align: right !important;
+}
+
+.finicing_point {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .point {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    span:last-child {
+      color: #063c5e;
+    }
+    .point_circle {
+      display: block;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    &:nth-child(1) .point_circle {
+      background-color: #e3f2fd;
+    }
+
+    &:nth-child(2) .point_circle {
+      background-color: #c8e6c9;
+    }
+
+    &:nth-child(3) .point_circle {
+      background-color: #fff3e0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper_finacing {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .search_about_project{
+    div{
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width:1400px){
+   .wrapper_finacing {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
