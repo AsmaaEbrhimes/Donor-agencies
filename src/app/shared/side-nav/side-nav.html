@@ -2,13 +2,15 @@
   <img class="logo-menue" src="assets/Img/logo 8.png" />
   <ul>
     @for (item of menue(); track $index) {
-      <li [ngClass]="{'active': $index === 0}">
+      <li
+        [ngClass]="{ active: $index === 0 }"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         <span>{{ item.name }}</span>
         <svg-icon class="svg_icon_menue" [src]="item.icon"> </svg-icon>
       </li>
     }
   </ul>
 </section>
-
-
-
