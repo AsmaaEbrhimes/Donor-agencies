@@ -1,0 +1,37 @@
+<section class="wrapper_Consultant" dir="rtl">
+  <h3>المستشارون المتعاونون</h3>
+  @if (data().length > 0) {
+    <p-carousel
+      [value]="data()"
+      [numVisible]="3"
+      [numScroll]="1"
+      [responsiveOptions]="responsiveOptions"
+    >
+      <ng-template let-item #item>
+        <div class="card">
+          <div>
+            <svg-icon [src]="item.image"> </svg-icon>
+          </div>
+
+          <div class="pref_descrption">
+            <h4>{{ item.name }}</h4>
+            <h5>{{ item.title }}</h5>
+            <div>
+              <svg-icon class="shape-dots" src="assets/Svg/Star 1.svg"> </svg-icon>
+              <svg-icon class="shape-dots" src="assets/Svg/Star 1.svg"> </svg-icon>
+              <svg-icon class="shape-dots" src="assets/Svg/Star 1.svg"> </svg-icon>
+              <svg-icon class="shape-dots" src="assets/Svg/Star 5.svg"> </svg-icon>
+            </div>
+
+            <button>
+              <svg-icon class="icon_shat" src="assets/Svg/message-chat-01.svg"> </svg-icon>
+              <span>إرسال رسالة</span>
+            </button>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  } @else {
+    <div></div>
+  }
+</section>

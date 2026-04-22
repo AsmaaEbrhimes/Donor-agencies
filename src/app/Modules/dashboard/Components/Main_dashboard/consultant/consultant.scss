@@ -1,0 +1,68 @@
+@use '../../../../../../GlopalStyle.scss';
+.wrapper_Consultant {
+  h3 {
+    color: #063c5e;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  display: flex;
+  gap: 20px;
+  background-color: #f2f3fb;
+  border-radius: 40px;
+  padding: 25px;
+  width: fit-content;
+  margin-left: 20px;
+  h4,
+  h5 {
+    color: #444444;
+  }
+  button {
+    background-color: #124959;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px;
+    transition: 0.3s linear;
+    border: 1px solid transparent;
+    width: 100%;
+    white-space: nowrap;
+    .icon_shat {
+      margin-left: 10px;
+      padding-top: 7px;
+    }
+    &:hover {
+      background-color: white;
+      color: #124959 !important;
+      border: 1px solid #124959;
+      ::ng-deep svg path {
+        fill: #124959;
+      }
+    }
+  }
+
+  .pref_descrption {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+@media(max-width:767px){
+  .card{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+      margin-left: 0px !important;
+
+   button{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+   }
+  }
+}
