@@ -1,4 +1,4 @@
-@use'../../../../../GlopalStyle.scss';
+@use '../../../../../GlopalStyle.scss';
 
 .login-container {
   height: 100vh;
@@ -84,11 +84,11 @@
   }
 }
 
-.shape-dots{
+.shape-dots {
   position: absolute;
   top: 80%;
   left: 60%;
-    ::ng-deep svg {
+  ::ng-deep svg {
     width: 140px;
     height: auto;
   }
@@ -96,18 +96,23 @@
 
 .login-form {
   direction: rtl;
-  top: -90px;
   z-index: 999;
+  padding: 15px;
+  border-radius: 15px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.766);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   form {
     width: 400px;
   }
   label {
     font-family: 'Cairo', sans-serif !important;
   }
-  img{
+  img {
     text-align: center;
-    margin: 0 auto ;
+    margin: 0 auto;
+margin-bottom: 20px;
     display: block;
   }
   input {
@@ -120,7 +125,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-     margin-bottom: 30px;
+    margin-bottom: 30px;
   }
   button {
     background-color: #124959;
@@ -135,35 +140,20 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:767px){
+@media (max-width: 767px) {
   .side_img {
     display: none;
   }
 
-.login-form{
-  top: 0;
-  form {
-    width: 300px;
+  .login-form {
+    top: 0;
+    form {
+      width: 300px;
+    }
   }
 }
-}
 
-
-@media(min-width:767px) and (max-width:1200px){
+@media (min-width: 767px) and (max-width: 1200px) {
   .side_img {
     display: none;
   }
