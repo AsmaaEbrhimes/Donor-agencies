@@ -11,8 +11,45 @@ import { Performanceindicators } from './Components/Main_dashboard/performancein
 import { SharedModule as PrimeSharedModule } from 'primeng/api';
 import { MeetingCenter } from './Components/Main_dashboard/meeting-center/meeting-center';
 import { Projects } from './Components/projects/projects';
+import { PieCharts } from './Charts/pie-charts/pie-charts';
+import { BarCharts } from './Charts/bar-charts/bar-charts';
+import { NgxEchartsModule } from 'ngx-echarts';
+import { Financing } from './Components/Main_dashboard/financing/financing';
+import { SelectModule } from 'primeng/select';
+import { Consultant } from './Components/Main_dashboard/consultant/consultant';
+import { CarouselModule } from 'primeng/carousel';
+import { Setting } from './Components/setting/setting';
+import { Meeting } from './Components/meeting/meeting';
+import { DatePickerModule } from 'primeng/datepicker';
+
 @NgModule({
-  declarations: [Panel, Menue, MainPageInDashboard, Report, Performanceindicators, MeetingCenter, Projects],
-  imports: [CommonModule, DashboardRoutingModule, SharedModule, AngularSvgIconModule.forRoot(),PrimeSharedModule],
+  declarations: [
+    Panel,
+    Menue,
+    MainPageInDashboard,
+    Report,
+    Performanceindicators,
+    MeetingCenter,
+    Projects,
+    PieCharts,
+    BarCharts,
+    Financing,
+    Consultant,
+    Setting,
+    Meeting,
+  ],
+  imports: [
+    CommonModule,
+    DashboardRoutingModule,
+    SharedModule,
+    AngularSvgIconModule.forRoot(),
+    PrimeSharedModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    }),
+    SelectModule,
+    CarouselModule,
+    DatePickerModule
+  ],
 })
 export class DashboardModule {}
