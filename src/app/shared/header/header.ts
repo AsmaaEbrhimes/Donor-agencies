@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header {
-    visible2: boolean = false;
-OnToggel(){
-  this.visible2 = !this.visible2; 
-}
+  visiblePopupLogout = signal<boolean>(false);
+  visible2: boolean = false;
+  OnToggel() {
+    this.visible2 = !this.visible2;
+  }
+
+  onLogout() {
+    this.visiblePopupLogout.set(true);
+  }
+
+  onCloseLogout(){
+     this.visiblePopupLogout.set(false);
+  }
 }
