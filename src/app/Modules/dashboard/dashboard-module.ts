@@ -10,7 +10,7 @@ import { Report } from './Components/Main_dashboard/report/report';
 import { Performanceindicators } from './Components/Main_dashboard/performanceindicators/performanceindicators';
 import { SharedModule as PrimeSharedModule } from 'primeng/api';
 import { MeetingCenter } from './Components/Main_dashboard/meeting-center/meeting-center';
-import { Projects } from './Components/projects/projects';
+import { Projects } from './Components/folder_Projects/projects/projects';
 import { PieCharts } from './Charts/pie-charts/pie-charts';
 import { BarCharts } from './Charts/bar-charts/bar-charts';
 import { NgxEchartsModule } from 'ngx-echarts';
@@ -29,6 +29,7 @@ import { NewReplise } from './Components/Funding_requests/new-replise/new-replis
 import { RejecteRequests } from './Components/Funding_requests/rejecte-requests/rejecte-requests';
 import { AcceptedRequests } from './Components/Funding_requests/accepted-requests/accepted-requests';
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
+import { DilogFilterProjects } from './Components/folder_Projects/dilog-filter-projects/dilog-filter-projects';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { MainFundingRequests } from './Components/Funding_requests/main-funding-
     RejecteRequests,
     AcceptedRequests,
     MainFundingRequests,
+    DilogFilterProjects,
   ],
   imports: [
     CommonModule,

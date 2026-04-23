@@ -7,7 +7,7 @@ import { Meeting } from './Components/meeting/meeting';
 import { FinancialGovernor } from './Components/financial-governor/financial-governor';
 import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
-import { Projects } from './Components/projects/projects';
+import { Projects } from './Components/folder_Projects/projects/projects';
 
 const routes: Routes = [
   {
