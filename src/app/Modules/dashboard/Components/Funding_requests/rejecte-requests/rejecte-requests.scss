@@ -1,0 +1,22 @@
+@use '../../../../../../GlopalStyle.scss';
+
+
+button{
+  background-color: #124959;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid transparent;
+  transition: 0.3s linear;
+  &:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #124959;
+    color: #124959;
+  }
+}
+
+
+.rejected-status {
+  background-color: #ffebee;
+  color: #ef5350;
+}
