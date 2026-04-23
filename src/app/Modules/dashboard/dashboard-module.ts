@@ -23,6 +23,12 @@ import { Meeting } from './Components/meeting/meeting';
 import { DatePickerModule } from 'primeng/datepicker';
 import { FinancialGovernor } from './Components/financial-governor/financial-governor';
 import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
+import { FundingRequests } from './Components/Funding_requests/funding-requests/funding-requests';
+import { Taps } from './Components/Funding_requests/taps/taps';
+import { NewReplise } from './Components/Funding_requests/new-replise/new-replise';
+import { RejecteRequests } from './Components/Funding_requests/rejecte-requests/rejecte-requests';
+import { AcceptedRequests } from './Components/Funding_requests/accepted-requests/accepted-requests';
+import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 
 @NgModule({
   declarations: [
@@ -41,6 +47,12 @@ import { CreateFinancialGovernor } from './Components/create-financial-governor/
     Meeting,
     FinancialGovernor,
     CreateFinancialGovernor,
+    FundingRequests,
+    Taps,
+    NewReplise,
+    RejecteRequests,
+    AcceptedRequests,
+    MainFundingRequests,
   ],
   imports: [
     CommonModule,

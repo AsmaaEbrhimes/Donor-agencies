@@ -6,6 +6,7 @@ import { Setting } from './Components/setting/setting';
 import { Meeting } from './Components/meeting/meeting';
 import { FinancialGovernor } from './Components/financial-governor/financial-governor';
 import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
+import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'meeting', component: Meeting },
       { path: 'Financial_Governor', component: FinancialGovernor },
       { path: 'create_Financial_Governor', component: CreateFinancialGovernor },
+      { path: 'funding_requests', component: MainFundingRequests },
     ],
   },
 ];
