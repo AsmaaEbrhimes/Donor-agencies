@@ -19,13 +19,18 @@ ul {
     cursor: pointer;
     padding: 7px;
     transition: 0.3s linear;
+     ::ng-deep svg {
+        path {
+          stroke: #124959;
+        }
+      }
     &:hover {
       background-color: #124959;
       border-radius: 8px;
       color: white !important;
       ::ng-deep svg {
         path {
-          stroke: white;
+          stroke: white !important;
         }
       }
     }
@@ -39,7 +44,7 @@ ul {
   padding: 7px;
   ::ng-deep svg {
     path {
-      stroke: white;
+      stroke: white !important;
     }
   }
 }
