@@ -1,0 +1,7 @@
+<div class="wrapper_button_tabs">
+  @for (item of ShowTabst(); track $index) {
+    <button (click)="onNextTap($index)" [ngClass]="{ active: $index == index() }">
+      {{ item.name }}
+    </button>
+  }
+</div>

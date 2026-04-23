@@ -1,0 +1,40 @@
+@use '../../../../../../GlopalStyle.scss';
+
+.wrapper_button_tabs {
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  margin: 20px 0;
+  gap: 8px;
+  button {
+    border: 1px solid #9e9e9e;
+    color: #124959;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: white;
+    width: 15%;
+    transition: 0.3s linear;
+    &:hover {
+      background-color: #124959;
+      color: white;
+    }
+  }
+}
+
+.active {
+  border: 1px solid #124959 !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+
+@media(max-width:767px){
+  .wrapper_button_tabs{
+    flex-wrap: wrap;
+    button{
+      width: 45%;
+      white-space: nowrap;
+    }
+  }
+}
