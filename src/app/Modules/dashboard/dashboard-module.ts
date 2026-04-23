@@ -21,6 +21,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { Setting } from './Components/setting/setting';
 import { Meeting } from './Components/meeting/meeting';
 import { DatePickerModule } from 'primeng/datepicker';
+import { FinancialGovernor } from './Components/financial-governor/financial-governor';
+import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { DatePickerModule } from 'primeng/datepicker';
     Consultant,
     Setting,
     Meeting,
+    FinancialGovernor,
+    CreateFinancialGovernor,
   ],
   imports: [
     CommonModule,
