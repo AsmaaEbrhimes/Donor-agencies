@@ -1,0 +1,32 @@
+<section class="wrapper_section">
+  <h4>قائمة مشاريعك</h4>
+  <div class="header_search_filter">
+    <div class="search_input">
+      <svg-icon class="search_icon" src="assets/Svg/search-01.svg"> </svg-icon>
+      <input placeholder="ابحث عن محفظة" />
+    </div>
+
+    <button class="btn_filter">
+      فلتر البحث
+      <svg-icon class="search_icon" src="assets/Svg/filter.svg"> </svg-icon>
+    </button>
+  </div>
+
+  <div class="grid">
+    <app-tabel
+      dir="rtl"
+      [data]="data()"
+      [bodytabel]="bodytabel()"
+      [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+    >
+      <ng-template pTemplate="actions" let-row>
+        <div class="actions">
+          <button aria-label="show" class="view_project">
+            <svg-icon class="search_icon" src="assets/Svg/view.svg"> </svg-icon>
+            <span>تفاصيل</span>
+          </button>
+        </div>
+      </ng-template>
+    </app-tabel>
+  </div>
+</section>
