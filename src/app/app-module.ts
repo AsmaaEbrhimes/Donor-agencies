@@ -51,8 +51,6 @@ import { providePrimeNG } from 'primeng/config';
   ],
   providers: [
     provideZonelessChangeDetection(),
-
-    provideBrowserGlobalErrorListeners(),
     provideBrowserGlobalErrorListeners(),
     provideHttpClient(withInterceptorsFromDi()),
     provideAnimationsAsync(),
