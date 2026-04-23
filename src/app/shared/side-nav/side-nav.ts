@@ -16,11 +16,12 @@ export class SideNav implements OnInit {
     this.menue.set([
       { name: 'لوحة التحكم', icon: 'assets/Svg/dashboard-square-02.svg', active: true, route: '/Dashboard/dashboard' },
       { name: 'المحافظ التمويلية', icon: 'assets/Svg/wallet-01.svg', active: false, route: '/Dashboard/dashboard/Financial_Governor' },
-      { name: 'طلبات التمويل', icon: 'assets/Svg/plus-sign-square.svg', active: false, route: '' },
+      { name: 'طلبات التمويل', icon: 'assets/Svg/plus-sign-square.svg', active: false, route: '/Dashboard/dashboard/funding_requests' },
       { name: 'المشاريع', icon: 'assets/Svg/clipboard.svg', active: false, route: '' },
       { name: 'إدارة الشركات', icon: 'assets/Svg/plus-sign-square.svg', active: false, route: '' },
       { name: 'الأستشارات', icon: 'assets/Svg/user-group.svg', active: false, route: '' },
       { name: 'التقارير', icon: 'assets/Svg/analytics-01.svg', active: false, route: '' },
+      { name: 'طلبات الاستشارة', icon: 'assets/Svg/Icon.svg', active: false, route: '' },
     ]);
   }
 }
