@@ -1,7 +1,6 @@
-
-.wrapper_new_replise{
+.wrapper_new_replise {
   height: 380px;
-overflow-y: auto;
+  overflow-y: auto;
 }
 
 .card {
@@ -83,5 +82,16 @@ overflow-y: auto;
     color: #455469;
     font-size: 14px;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_card,
+  .footer_card,
+  .content_card {
+    flex-direction: column;
+  }
+  .content_card{
+    gap: 10px;
   }
 }
