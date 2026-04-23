@@ -1,0 +1,17 @@
+<app-tabel
+  [data]="fundingRequestsData"
+  dir="rtl"
+  [data]="fundingRequestsData"
+  [bodytabel]="bodytabel()"
+  [status_data]="fundingRequestsData.length > 0 ? 'has-data' : 'no-data'"
+>
+  <ng-template pTemplate="status" let-row>
+    <span class="status-badge" [ngClass]="row.statusClass">
+      {{ row.status }}
+    </span>
+  </ng-template>
+
+  <ng-template pTemplate="actions" let-row>
+    <button class="view-btn">عرض الطلب</button>
+  </ng-template>
+</app-tabel>

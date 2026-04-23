@@ -1,0 +1,42 @@
+@use '../../../../../../GlopalStyle.scss';
+
+
+button{
+  background-color: #124959;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid transparent;
+  transition: 0.3s linear;
+  &:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #124959;
+    color: #124959;
+  }
+}
+
+
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.new-status {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}
+
+.interested-status {
+  background-color: #f1f8e9;
+  color: #689f38;
+  border: 1px solid #dcedc8;
+}
+
+.rejected-status {
+  background-color: #ffebee;
+  color: #ef5350;
+}
