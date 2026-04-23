@@ -1,0 +1,18 @@
+
+
+<section class="wrapper_section">
+  <h4>طلبات التمويل الواردة</h4>
+  <app-taps (nextTap)="onNextTap($event)"></app-taps>
+  @if (indexTap() == 0) {
+    <app-funding-requests></app-funding-requests>
+  } @else if (indexTap() == 1) {
+     <app-new-replise></app-new-replise>
+  } @else if (indexTap() == 2) {
+    <app-accepted-requests></app-accepted-requests>
+  }@else if (indexTap() == 3) {
+    <app-rejecte-requests></app-rejecte-requests>
+  }
+</section>
+
+
+
