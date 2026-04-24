@@ -1,8 +1,24 @@
 <section class="wrapper_report">
   @for (item of data(); track $index) {
     <div class="card">
-      <p class="title">{{ item.title }}</p>
-      <p class="descrption">{{ item.description }}</p>
+      <div class="content_card">
+        <div class="header_card">
+          <span class="icon-clock"><svg-icon src="assets/Svg/clock-01.svg"> </svg-icon></span>
+          <div>
+            <p class="title">{{ item.title }}</p>
+            <p class="descrption" [class.big-text]="$first">{{ item.description }}</p>
+              @if($index == 0){
+            <p>لا توجد مشاريع ممولة حتى الآن</p>
+              }
+          </div>
+        </div>
+        <div class="statictacs_report">
+          @if($index == 0){
+            <span><svg-icon class="statictacs" src="assets/Svg/ArrowRise.svg"> </svg-icon></span>
+          }
+          <span>88%</span>
+        </div>
+      </div>
     </div>
   }
 </section>
