@@ -1,52 +1,53 @@
-
-.wrapper-error{
-  .error{
+.wrapper-error {
+  .error {
     color: red;
     font-size: 12px;
     margin-top: 5px;
     font-weight: bold;
     display: block;
-   animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   }
 }
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
 
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
 
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-3px, 0, 0);
   }
 
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(3px, 0, 0);
   }
 }
 
-
-
-::placeholder , button , input{
-   font-family: 'Cairo', sans-serif ;
+::placeholder,
+button,
+input {
+  font-family: 'Cairo', sans-serif;
 }
 
-
-input , button{
+input,
+button {
   border: none;
   outline: none;
-    border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
-
-
-li{
+li {
   list-style: none;
   text-decoration: none;
 }
-
 
 .status-badge {
   padding: 6px 12px;
@@ -77,11 +78,19 @@ li{
   }
 }
 
-
-
-.wrapper_section{
-    background-color: white;
+.wrapper_section {
+  background-color: white;
   margin: 20px;
-  padding: 10px;
+  padding: 30px;
   border-radius: 10px;
+}
+
+
+
+
+@media(max-width:767px){
+  .wrapper_section{
+      margin: 10px !important;
+  padding: 10px !important;
+  }
 }
