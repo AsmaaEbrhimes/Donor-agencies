@@ -30,6 +30,7 @@ import { RejecteRequests } from './Components/Funding_requests/rejecte-requests/
 import { AcceptedRequests } from './Components/Funding_requests/accepted-requests/accepted-requests';
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 import { DilogFilterProjects } from './Components/folder_Projects/dilog-filter-projects/dilog-filter-projects';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { DilogFilterProjects } from './Components/folder_Projects/dilog-filter-p
     }),
     SelectModule,
     CarouselModule,
-    DatePickerModule
+    DatePickerModule,
+    DialogModule
   ],
 })
 export class DashboardModule {}
