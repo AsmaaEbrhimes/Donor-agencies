@@ -1,0 +1,111 @@
+<p-dialog
+  [(visible)]="visible"
+  [modal]="true"
+  [style]="{ width: '40rem' }"
+  [breakpoints]="{ '1199px': '50vw', '575px': '90vw' }"
+  [draggable]="false"
+  [resizable]="false"
+  (onHide)="onDialogCloseHandler()"
+>
+  <div class="wrapper_filterby">
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد هدف التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>نوع المشروع</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد هدف التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>القطاع</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>الجهة المنفذة</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>المنطقة / المحافظة</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>حدد انشطة التمويل</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>نطاق الميزانية</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>فترة التنفيذ</label>
+    </div>
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="حدد انشطة التمويل"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>فترة التنفيذ</label>
+    </div>
+    <diV class="flex_btn">
+      <button class="close_btn" (click)="onDialogCloseHandler()">أغلاق</button>
+      <button class="filter_btn">أبحث</button>
+    </diV>
+  </div>
+</p-dialog>

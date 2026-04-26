@@ -1,0 +1,67 @@
+@use '../../../../../../GlopalStyle.scss';
+
+:host {
+  ::ng-deep .p-dialog-header {
+    display: none;
+  }
+}
+
+:host {
+  ::ng-deep .p-dialog {
+    overflow: hidden;
+  }
+}
+
+.wrapper_filterby {
+  width: 100%;
+  .card {
+    width: 100% !important;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    align-items: center;
+    gap: 10px;
+  }
+  .flex_btn {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    transition: 0.3s linear;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .close_btn {
+    background-color: #ff2d39;
+  }
+  .filter_btn {
+    background-color: #124959;
+  }
+}
+
+label {
+  white-space: nowrap;
+  color: #124959;
+  text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .wrapper_filterby {
+    .card {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+  .select {
+    order: 2 !important;
+  }
+}
