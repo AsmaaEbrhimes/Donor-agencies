@@ -21,7 +21,7 @@
     >
       <ng-template pTemplate="actions" let-row>
         <div class="actions">
-          <button aria-label="show" class="view_project">
+          <button aria-label="show" class="view_project" [routerLink]="['/Dashboard/dashboard/details_project']">
             <svg-icon class="search_icon" src="assets/Svg/view.svg"> </svg-icon>
             <span>تفاصيل</span>
           </button>
