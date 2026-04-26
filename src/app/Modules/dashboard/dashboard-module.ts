@@ -31,6 +31,7 @@ import { AcceptedRequests } from './Components/Funding_requests/accepted-request
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 import { DilogFilterProjects } from './Components/folder_Projects/dilog-filter-projects/dilog-filter-projects';
 import { DialogModule } from 'primeng/dialog';
+import { DetailsProject } from './Components/folder_Projects/details-project/details-project';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { DialogModule } from 'primeng/dialog';
     AcceptedRequests,
     MainFundingRequests,
     DilogFilterProjects,
+    DetailsProject,
   ],
   imports: [
     CommonModule,
