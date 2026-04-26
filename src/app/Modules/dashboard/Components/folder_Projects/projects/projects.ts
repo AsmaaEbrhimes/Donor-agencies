@@ -8,6 +8,7 @@ import { Component, OnInit, signal } from '@angular/core';
 })
 export class Projects implements OnInit {
   data = signal<any>([]);
+  visiblePopupFilter = signal<boolean>(false);
 
   ngOnInit(): void {
     this.getData();
@@ -60,8 +61,7 @@ export class Projects implements OnInit {
         status: 'متأخر',
         approved_funding: 50000,
         completion_percentage: '100%',
-      }
-      ,
+      },
       {
         project_name: 'السعودية الخضراء',
         owner_org: 'وزارة البيئة والمياه والزراعة',
@@ -70,10 +70,8 @@ export class Projects implements OnInit {
         status: 'متأخر',
         approved_funding: 50000,
         completion_percentage: '100%',
-      }
-
+      },
     ];
-    this.data.set(data);
     this.data.set(data);
   }
 
@@ -87,5 +85,13 @@ export class Projects implements OnInit {
       { key: 'التمويل المعتمد', value: 'approved_funding' },
       { key: 'نسبة الإنجاز', value: 'completion_percentage' },
     ];
+  }
+
+  onFilter() {
+    this.visiblePopupFilter.set(true);
+  }
+
+  onCloseLogout() {
+    this.visiblePopupFilter.set(false);
   }
 }
