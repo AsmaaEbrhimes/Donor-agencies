@@ -74,18 +74,4 @@ export class MeetingCenter implements OnInit {
     { key: 'الموضوع', value: 'subject' },
   ];
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
