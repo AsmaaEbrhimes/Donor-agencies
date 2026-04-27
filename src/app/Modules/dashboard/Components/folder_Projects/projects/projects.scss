@@ -1,6 +1,6 @@
-@use"../../../../../../GlopalStyle.scss";
+@use '../../../../../../GlopalStyle.scss';
 
-h4{
+h4 {
   color: #124959;
   margin-bottom: 10px;
 }
@@ -11,22 +11,19 @@ h4{
   padding: 10px;
   border-radius: 12px;
   width: 30%;
-  input{
+  input {
     background-color: transparent;
     width: 100%;
   }
 }
 
-
-
-.header_search_filter{
+.header_search_filter {
   display: flex;
   align-items: center;
   justify-content: space-between;
   direction: rtl;
   margin-bottom: 20px;
 }
-
 
 .search_icon {
   position: relative;
@@ -35,36 +32,61 @@ h4{
   color: #54657e;
 }
 
-
-.btn_filter{
+.btn_filter {
   background-color: #124959;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 10px;
   font-weight: 600;
   font-size: 16px;
 
   transition: 0.3s linear;
-  &:hover{
-    background-color: #FFFFFF;
-    color:#124959 ;
+  &:hover {
+    background-color: #ffffff;
+    color: #124959;
     border: 1px solid #124959;
-     ::ng-deep svg path {
-        fill: #124959;
-      }
+    ::ng-deep svg path {
+      fill: #124959;
+    }
   }
 }
 
-
-
-.view_project{
+.view_project {
   background-color: transparent;
-  span{
-   text-decoration:underline;
-   display: inline-block;
-transition: 0.3s linear;
-&:hover{
-  transform: scale(1.2deg);
-}
+  span {
+    text-decoration: underline;
+    display: inline-block;
+    transition: 0.3s linear;
+    &:hover {
+      transform: scale(1.2deg);
+    }
   }
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+}
+
+.status-completed {
+  background-color: #d4fbe5;
+  color: #14b86f;
+  border-color: #14b86f;
+}
+
+.status-ongoing {
+  background-color: #fff2df;
+  color: #fbb040;
+  border-color: #fbb040;
+}
+
+.status-delayed {
+  background-color: #ffe5e5;
+  color: #ff6b6b;
+  border-color: #ff6b6b;
 }
