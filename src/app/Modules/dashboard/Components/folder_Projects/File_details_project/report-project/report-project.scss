@@ -1,0 +1,45 @@
+@use '../../../../../../../GlopalStyle.scss';
+
+.report_project_download {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  .card {
+    background-color: #f8f9ff !important;
+    border: 1px solid #124959;
+    border-radius: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    .size_file {
+      display: flex;
+      justify-content: space-between;
+    }
+    .install_project {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      button{
+        background-color: transparent;
+      }
+    }
+    h4 {
+      color: #063c5e;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    p {
+      color: #62636c;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .install_project {
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .report_project_download {
+    grid-template-columns: 1fr;
+  }
+}
