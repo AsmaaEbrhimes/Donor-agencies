@@ -9,6 +9,7 @@ import { CreateFinancialGovernor } from './Components/create-financial-governor/
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 import { Projects } from './Components/folder_Projects/projects/projects';
 import { DetailsProject } from './Components/folder_Projects/details-project/details-project';
+import { PartnershipManagement } from './Components/partnership-management/partnership-management';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
       { path: 'funding_requests', component: MainFundingRequests },
       { path: 'projects', component: Projects },
       { path: 'details_project', component: DetailsProject },
+      { path: 'Partnership_Management', component: PartnershipManagement },
 
     ],
   },
