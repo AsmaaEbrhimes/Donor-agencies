@@ -1,0 +1,236 @@
+@use '../../../../../GlopalStyle.scss';
+
+.section_partnership_mangment {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h4 {
+  color: #124959;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.report_about_partenership {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  .card {
+    background-color: #f2f3fb;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #d5d7e9;
+    cursor: pointer;
+    color: #000000;
+    p {
+      font-weight: bold;
+    }
+    p:first-child {
+      text-align: right;
+    }
+    p:last-child {
+      text-align: left;
+    }
+  }
+}
+
+.show_details {
+  color: #ffffff;
+  background-color: #124959;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s linear;
+  &:hover {
+    border: 1px solid #124959;
+    background-color: transparent;
+    color: #124959;
+  }
+}
+
+.partnership_details_partenrship {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.details_partnership {
+  background-color: #f2f3fb;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40%;
+  height: fit-content;
+}
+.tabel_parteinership {
+  width: 60%;
+}
+
+.pref_data_partenership {
+  padding: 10px;
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    color: #124959;
+    svg {
+      position: relative;
+      top: 9px;
+    }
+
+    .notes {
+      text-align: right;
+      margin-left: auto;
+    }
+  }
+}
+
+.title,
+.notes {
+  color: #124959;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.Morphology_and_total_ralated_project {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.footer_Morphology {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.status_Morphology {
+  background-color: #4db273;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12;
+  border-radius: 20px;
+  padding: 0px 5px;
+}
+
+.statistacs_partnership {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+// تعريف الألوان لكل فئة
+$categories: (
+  'community': (
+    bg: #e1f0ff,
+    border: #b8dbff,
+    text: #003a70,
+  ),
+  // مجتمع - أزرق
+  'workshop': (
+      bg: #d4fbe5,
+      border: #a7f3ca,
+      text: #065f46,
+    ),
+  // ورش - أخضر
+  'training': (
+      bg: #fff2df,
+      border: #fed7aa,
+      text: #92400e,
+    ), // نشاط تدريبي - أصفر
+);
+
+.partnership_categories {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 50%;
+  margin: auto;
+
+  p {
+    margin: 0;
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.02); // تأثير بسيط عند الوقوف عليه
+    }
+  }
+
+  @each $name, $colors in $categories {
+    .cat-#{$name} {
+      background-color: map-get($colors, bg);
+      border-color: map-get($colors, border);
+      color: map-get($colors, text);
+    }
+  }
+}
+
+h1 {
+  color: #124959;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.title_statistics {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  color: #124959;
+  svg {
+    position: relative;
+    top: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .report_about_partenership {
+    grid-template-columns: 1fr;
+  }
+  .partnership_details_partenrship {
+    flex-direction: column;
+  }
+  .details_partnership,
+  .tabel_parteinership {
+    width: 100%;
+  }
+
+  .pref_data_partenership {
+    .card {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .footer_Morphology {
+    flex-direction: column;
+    justify-content: center;
+  }
+  h4 {
+    text-align: center;
+  }
+
+  .statistacs_partnership{
+    grid-template-columns: 1fr;
+  }
+
+  .partnership_categories {
+    max-width: 90%;
+  }
+  .flex_status{
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+  }
+}

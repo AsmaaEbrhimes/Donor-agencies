@@ -1,0 +1,101 @@
+<section class="wrapper_section section_partnership_mangment">
+  <div class="header_partnership_mangment">
+    <h4>ادارة الشراكات</h4>
+    <div class="report_about_partenership">
+      <div class="card">
+        <p>عدد الشراكات</p>
+        <p>25 شراكة</p>
+      </div>
+
+      <div class="card">
+        <p>عددد الشراكات المنتهية</p>
+        <p>501</p>
+      </div>
+
+      <div class="card">
+        <p>عدد الشراكات النشطة</p>
+        <p>50</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="partnership_details_partenrship">
+    <div class="details_partnership">
+      <h4>تفاصيل الشراكة</h4>
+      <div class="pref_data_partenership">
+        <div class="card">
+          <p>
+            <span>شريكك منذ 02 يناير 2023</span>
+            <svg-icon src="assets/Svg/agreement-02.svg"> </svg-icon>
+          </p>
+          <span class="title">ولادة حلم للأستشارات الأدارية</span>
+        </div>
+
+        <div class="card">
+          <p>
+            <span>المبلغ المنصرف</span>
+            <span>:5000</span>
+          </p>
+          <p>
+            <span class="title">نوع الشراكة</span>
+            <span>: تمويلية</span>
+          </p>
+        </div>
+        <div class="card">
+          <p class="notes">:ملاحظات</p>
+        </div>
+
+        <p class="title">المشاريع المرتبطة</p>
+        <div class="Morphology_and_total_ralated_project">
+          <div class="footer_Morphology">
+            <p class="flex_status">
+              <span class="title">حالة الصرف </span>
+              <span class="status_Morphology">دفعة واحدة </span>
+            </p>
+            <p>زراعة مليون شجرة</p>
+          </div>
+
+          <div class="footer_Morphology">
+            <p><svg-icon src="assets/Svg/file-attach-01.svg"> </svg-icon></p>
+            <p>
+              <span class="title">أجمالي المبلغ</span>
+              <span>:500.000 ريال</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tabel_parteinership">
+      <app-tabel
+        dir="rtl"
+        [data]="data()"
+        [bodytabel]="bodytabel()"
+        [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+      >
+        <ng-template pTemplate="actions" let-row>
+          <div class="actions">
+            <button aria-label="show" class="show_details">عرض التفاصيل</button>
+          </div>
+        </ng-template>
+      </app-tabel>
+    </div>
+  </div>
+
+  <div>
+    <h1>الأنشطة الأعلى تفاعل</h1>
+    <div class="title_statistics">
+      <span>مؤشر التقدم العام</span>
+      <svg-icon src="assets/Svg/Group 8772.svg"> </svg-icon>
+    </div>
+    <div class="statistacs_partnership">
+      <app-pie-charts></app-pie-charts>
+      <div class="partnership_categories">
+        <p class="cat-community">مجتمع</p>
+        <p class="cat-workshop">ورش</p>
+        <p class="cat-training">نشاط تدريبي</p>
+      </div>
+      <app-bar-charts></app-bar-charts>
+    </div>
+  </div>
+</section>
