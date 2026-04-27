@@ -1,0 +1,27 @@
+@use '../../../../../../../GlopalStyle.scss';
+
+.project_summary_info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #dadde2 !important;
+  padding-top: 20px;
+  .card {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+    p:first-child {
+      color: #455469;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .project_summary_info {
+    flex-direction: column;
+  }
+}
