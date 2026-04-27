@@ -32,6 +32,15 @@ import { MainFundingRequests } from './Components/Funding_requests/main-funding-
 import { DilogFilterProjects } from './Components/folder_Projects/dilog-filter-projects/dilog-filter-projects';
 import { DialogModule } from 'primeng/dialog';
 import { DetailsProject } from './Components/folder_Projects/details-project/details-project';
+import { NameProject } from './Components/folder_Projects/File_details_project/name-project/name-project';
+import { DescrptionProject } from './Components/folder_Projects/File_details_project/descrption-project/descrption-project';
+import { LifeCycleProject } from './Components/folder_Projects/File_details_project/life-cycle-project/life-cycle-project';
+import { ProjectSummeryInfo } from './Components/folder_Projects/File_details_project/project-summery-info/project-summery-info';
+import { ProjectTarget } from './Components/folder_Projects/File_details_project/project-target/project-target';
+import { PerformanceMetrics } from './Components/folder_Projects/File_details_project/performance-metrics/performance-metrics';
+import { ReportProject } from './Components/folder_Projects/File_details_project/report-project/report-project';
+import { ChallengeProject } from './Components/folder_Projects/File_details_project/challenge-project/challenge-project';
+import { PartnershipManagement } from './Components/partnership-management/partnership-management';
 
 @NgModule({
   declarations: [
@@ -58,6 +67,15 @@ import { DetailsProject } from './Components/folder_Projects/details-project/det
     MainFundingRequests,
     DilogFilterProjects,
     DetailsProject,
+    NameProject,
+    DescrptionProject,
+    LifeCycleProject,
+    ProjectSummeryInfo,
+    ProjectTarget,
+    PerformanceMetrics,
+    ReportProject,
+    ChallengeProject,
+    PartnershipManagement,
   ],
   imports: [
     CommonModule,
