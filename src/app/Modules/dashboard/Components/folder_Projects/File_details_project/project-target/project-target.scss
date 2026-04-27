@@ -1,0 +1,37 @@
+@use '../../../../../../../GlopalStyle.scss';
+
+.project_target {
+  border-bottom: 1px solid #dadde2 !important;
+  padding-bottom: 20px;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    direction: rtl;
+    li {
+      color: #124959;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  .circle {
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: #063c5e;
+    border-radius: 50%;
+    margin-left: 4px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project_target {
+    ul {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
+}
