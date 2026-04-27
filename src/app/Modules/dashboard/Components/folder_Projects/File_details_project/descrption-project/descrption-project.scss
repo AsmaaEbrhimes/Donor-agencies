@@ -1,0 +1,31 @@
+@use '../../../../../../../GlopalStyle.scss';
+
+.descrption_project {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dadde2 !important;
+}
+
+.status_project {
+  background-color: #fff3e2;
+  color: #c36b05;
+  font-size: 14px;
+  font-weight: 600;
+  height: fit-content;
+  padding: 5px 20px;
+  border: 1px solid #c36b05;
+  border-radius: 20px;
+}
+
+
+
+
+
+@media(max-width:767px){
+ .descrption_project{
+  flex-direction: column;
+ }
+ .status_project{
+  width: fit-content;
+ }
+}
