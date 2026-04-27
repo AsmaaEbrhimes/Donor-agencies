@@ -1,54 +1,61 @@
-import { Component } from '@angular/core';
-import { EChartsOption } from 'echarts';
+
+import { Component, OnInit } from '@angular/core';
+// 1. استيراد المحرك الأساسي فقط
+import * as echarts from 'echarts/core';
+// 2. استيراد النوع اللي محتاجينه (Pie)
+import { PieChart } from 'echarts/charts';
+// 3. استيراد المكونات الإضافية (Tooltip, Title, etc.)
+import { TooltipComponent, LegendComponent } from 'echarts/components';
+// 4. استيراد الـ Canvas للرسم
+import { CanvasRenderer } from 'echarts/renderers';
+
+// تسجيل المكونات اللي اخترناها فقط
+echarts.use([PieChart, TooltipComponent, LegendComponent, CanvasRenderer]);
+
 @Component({
   selector: 'app-pie-charts',
   standalone: false,
   templateUrl: './pie-charts.html',
   styleUrl: './pie-charts.scss',
 })
-export class PieCharts {
-  weatherIcons = {
-    Sunny: 'https://echarts.apache.org/examples/data/asset/img/weather/sunny_128.png',
-    Cloudy: 'https://echarts.apache.org/examples/data/asset/img/weather/cloudy_128.png',
-    Showers: 'https://echarts.apache.org/examples/data/asset/img/weather/showers_128.png',
-  };
-option: EChartsOption = {
-  title: {
-    left: 'center',
-    top: '20'
-  },
-  legend: {
-    show: false
-  },
-  tooltip: {
-    trigger: 'item',
-    formatter: '{b} : {c} ({d}%)'
-  },
-  color: ['#D1F2EB', '#A3E4D7', '#FAD7A0', '#AED6F1', '#D2B4DE'],
-  series: [
-    {
-      type: 'pie',
-      radius: '70%',
-      center: ['50%', '50%'],
-      label: {
-        show: true,
-        position: 'inside',
-        formatter: '{d}%',
-        fontSize: 14,
-        fontWeight: 'bold',
-        color: '#333'
+export class PieCharts implements OnInit {
+  option: any = {};
+
+  ngOnInit() {
+    this.option = {
+      tooltip: {
+        trigger: 'item',
+        formatter: '{b}: {d}%'
       },
-      labelLine: {
-        show: false
-      },
-      data: [
-        { value: 1548, name: 'CityE' },
-        { value: 735, name: 'CityC' },
-        { value: 510, name: 'CityD' },
-        { value: 434, name: 'CityB' },
-        { value: 335, name: 'CityA' }
+      legend: { show: false },
+      color: ['#E1F0FF', '#D4FBE5', '#FFF2DF'],
+      series: [
+        {
+          name: 'إحصائيات المبادرات',
+          type: 'pie',
+          radius: '90%',
+          center: ['50%', '50%'],
+          labelLine: { show: false },
+          label: {
+            show: true,
+            position: 'inside',
+            formatter: '{d}%',
+            fontSize: 16,
+            fontWeight: 'bold',
+            color: '#1a4b5a'
+          },
+          data: [
+            { value: 65, name: 'مجتمع' },
+            { value: 25, name: 'ورش' },
+            { value: 10, name: 'نشاط تدريبي' }
+          ],
+          itemStyle: {
+            borderRadius: 0,
+            borderColor: '#fff',
+            borderWidth: 1
+          }
+        }
       ]
-    }
-  ]
-};
+    };
+  }
 }
