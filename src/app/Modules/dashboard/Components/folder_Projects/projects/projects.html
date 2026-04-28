@@ -33,15 +33,17 @@
       </ng-template>
 
       <ng-template pTemplate="status" let-row>
-  <span class="status-badge" [ngClass]="{
-      'status-completed': row.status === 'مكتملة',
-      'status-ongoing': row.status === 'جارية',
-      'status-delayed': row.status === 'متأخر'
-    }">
-    {{ row.status }}
-  </span>
-</ng-template>
-
+        <span
+          class="status-badge"
+          [ngClass]="{
+            'status-completed': row.status === 'مكتملة',
+            'status-ongoing': row.status === 'جارية',
+            'status-delayed': row.status === 'متأخر',
+          }"
+        >
+          {{ row.status }}
+        </span>
+      </ng-template>
     </app-tabel>
   </div>
 </section>
