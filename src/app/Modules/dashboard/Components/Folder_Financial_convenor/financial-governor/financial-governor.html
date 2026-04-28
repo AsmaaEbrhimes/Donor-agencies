@@ -1,0 +1,72 @@
+<section class="wrapper_section">
+  <h4>المحافظ</h4>
+  <div class="Financial_Governor_data">
+    <div class="card">
+      <p class="title">إجمالي عدد المحافظ</p>
+      <p class="descrption">محفظة</p>
+    </div>
+
+    <div class="card">
+      <p class="title">إجمالي التمويل المعتمد</p>
+      <p class="descrption">59033 ريال سعودي</p>
+    </div>
+
+    <div class="card">
+      <p class="title">إجمالي التمويل المنصرف</p>
+      <p class="descrption">5300 ريال سعودي</p>
+    </div>
+
+    <div class="card">
+      <p class="title">إجمالي المبلغ المتبقي</p>
+      <p class="descrption">46088</p>
+    </div>
+
+    <div class="card">
+      <p class="title">إجمالي عدد المشاريع داخل المحافظ</p>
+      <p class="descrption">420 مشروع</p>
+    </div>
+  </div>
+
+  <div class="Financial_Governor_report">
+    <div class="search_and_create_Financial_Governor">
+      <div class="search_input">
+        <svg-icon class="search_icon" src="assets/Svg/search-01.svg"> </svg-icon>
+        <input placeholder="ابحث عن محفظة" />
+      </div>
+
+      <div>
+        <button [routerLink]="['/Dashboard/dashboard/create_Financial_Governor']">
+          انشاء محفظة جديدة
+        </button>
+      </div>
+    </div>
+
+    <div class="grid_Financial_Governor">
+      <app-tabel
+        dir="rtl"
+        [data]="data()"
+        [bodytabel]="bodytabel()"
+        [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+      >
+        <ng-template pTemplate="actions" let-row>
+          <div class="actions">
+            <button [routerLink]="['/Dashboard/dashboard/details_funding_requests']" aria-label="show" class="view_meeting">عرض التفاصيل</button>
+          </div>
+        </ng-template>
+
+        <ng-template pTemplate="status" let-row>
+          <span
+            class="status-badge"
+            [ngClass]="{
+              ongoing: row.status === 'نشطة',
+              completed: row.status === 'متوقفة',
+              stopped: row.status === 'متوقف',
+            }"
+          >
+            {{ row.status }}
+          </span>
+        </ng-template>
+      </app-tabel>
+    </div>
+  </div>
+</section>
