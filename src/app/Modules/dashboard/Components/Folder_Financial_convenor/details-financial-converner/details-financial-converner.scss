@@ -1,0 +1,146 @@
+@use '../../../../../../GlopalStyle.scss';
+.wrapper_details_finacial_converner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+h4 {
+  color: #124959;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.header_details_finacial_converner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    background-color: #e5ffe4;
+    color: #429963;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0 5px;
+  }
+}
+
+.report_details_finacial_converner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  direction: rtl;
+  .card {
+    background-color: #f2f3fb;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #d5d7e9;
+    cursor: pointer;
+    color: #000000;
+    p:last-child {
+      text-align: left;
+    }
+  }
+}
+
+.life_cycle_finacial_converner {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-end;
+  p {
+    background-color: #f2f3fb;
+    padding: 7px;
+    border-radius: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      white-space: nowrap;
+
+    span:first-child {
+      color: #124959;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    span:last-child {
+      color: #424242;
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+}
+
+.project_in_finacial_converner {
+  h4 {
+    margin-bottom: 15px;
+  }
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  white-space: nowrap;
+}
+
+.status-completed {
+  background-color: #d4fbe5;
+  color: #14b86f;
+  border-color: #14b86f;
+}
+
+.status-ongoing {
+  background-color: #fff2df;
+  color: #fbb040;
+  border-color: #fbb040;
+}
+
+.status-delayed {
+  background-color: #ffe5e5;
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+.details_btn {
+  text-decoration: underline;
+  color: #124959;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  &:hover{
+    opacity: 0.5;
+  }
+}
+
+
+
+
+@media(max-width:767px){
+  .report_details_finacial_converner{
+    grid-template-columns: 1fr;
+  }
+  .life_cycle_finacial_converner{
+    flex-direction: column;
+    justify-content: center;
+    p{
+      width: 100%;
+    }
+  }
+}
+
+
+@media(min-width:767px) and (max-width:1200px){
+.life_cycle_finacial_converner{
+    p{
+      width: 50%;
+    }
+  }
+}
+
+

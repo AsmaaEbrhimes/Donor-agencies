@@ -1,0 +1,83 @@
+<section class="wrapper_section wrapper_details_finacial_converner">
+  <div class="header_details_finacial_converner">
+    <p class="status">نشطة</p>
+    <h4>اسم المحفظة</h4>
+  </div>
+
+  <div class="report_details_finacial_converner">
+    <div class="card">
+      <p>اجمالي الميزانية</p>
+      <p>59033 ريال سعودي</p>
+    </div>
+
+    <div class="card">
+      <p>المصروف</p>
+      <p>5300 ريال سعودي</p>
+    </div>
+    <div class="card">
+      <p>المتبقيي</p>
+      <p>46088</p>
+    </div>
+    <div class="card">
+      <p>عدد المشايع</p>
+      <p>420 مشروع</p>
+    </div>
+  </div>
+
+  <div class="life_cycle_finacial_converner">
+    <p>
+      <span>25 اكتوبر 2025</span>
+      <span>تاريخ بدء المحفظة</span>
+    </p>
+    <p>
+      <span>25 اكتوبر 2026</span>
+      <span>تاريخ انتهاء المحفظة</span>
+    </p>
+  </div>
+
+  <div class="project_in_finacial_converner">
+    <h4>المشاريع داخل المحفظة</h4>
+    <app-tabel
+      dir="rtl"
+      [data]="data()"
+      [bodytabel]="bodyTable()"
+      [status_data]="data().length > 0 ? 'has-data' : 'no-data'"
+    >
+      <ng-template pTemplate="status" let-row>
+        <span
+          class="status-badge"
+          [ngClass]="{
+            'status-completed': row.status === 'مكتمل',
+            'status-ongoing': row.status === 'جاري',
+            'status-delayed': row.status === 'متوقف',
+          }"
+        >
+          {{ row.status }}
+        </span>
+      </ng-template>
+
+      <ng-template pTemplate="spendingRatio" let-row>
+        <span
+          class="status-badge"
+          [ngClass]="{
+            'status-completed': row.spendingRatio === 'مرتفع',
+            'status-ongoing': row.spendingRatio === 'متوسط',
+            'status-delayed': row.spendingRatio === 'ضعيف',
+          }"
+        >
+          {{ row.spendingRatio }}
+        </span>
+      </ng-template>
+
+      <ng-template pTemplate="actions" let-row>
+        <button
+          aria-label="show"
+          class="details_btn"
+          [routerLink]="['/Dashboard/dashboard/details_project']"
+        >
+          عرض التفاصيل
+        </button>
+      </ng-template>
+    </app-tabel>
+  </div>
+</section>
