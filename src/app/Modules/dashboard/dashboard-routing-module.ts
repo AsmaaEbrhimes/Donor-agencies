@@ -4,12 +4,13 @@ import { Panel } from './panel/panel';
 import { MainPageInDashboard } from './Components/Main_dashboard/main-page-in-dashboard/main-page-in-dashboard';
 import { Setting } from './Components/setting/setting';
 import { Meeting } from './Components/meeting/meeting';
-import { FinancialGovernor } from './Components/financial-governor/financial-governor';
-import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
+import { FinancialGovernor } from './Components/Folder_Financial_convenor/financial-governor/financial-governor';
+import { CreateFinancialGovernor } from './Components/Folder_Financial_convenor/create-financial-governor/create-financial-governor';
 import { MainFundingRequests } from './Components/Funding_requests/main-funding-requests/main-funding-requests';
 import { Projects } from './Components/folder_Projects/projects/projects';
 import { DetailsProject } from './Components/folder_Projects/details-project/details-project';
 import { PartnershipManagement } from './Components/partnership-management/partnership-management';
+import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
 
 const routes: Routes = [
   {
@@ -25,7 +26,7 @@ const routes: Routes = [
       { path: 'projects', component: Projects },
       { path: 'details_project', component: DetailsProject },
       { path: 'Partnership_Management', component: PartnershipManagement },
-
+      { path: 'details_funding_requests', component: DetailsFinancialConverner },
     ],
   },
 ];
