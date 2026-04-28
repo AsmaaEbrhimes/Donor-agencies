@@ -21,8 +21,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { Setting } from './Components/setting/setting';
 import { Meeting } from './Components/meeting/meeting';
 import { DatePickerModule } from 'primeng/datepicker';
-import { FinancialGovernor } from './Components/financial-governor/financial-governor';
-import { CreateFinancialGovernor } from './Components/create-financial-governor/create-financial-governor';
+import { FinancialGovernor } from './Components/Folder_Financial_convenor/financial-governor/financial-governor';
+import { CreateFinancialGovernor } from './Components/Folder_Financial_convenor/create-financial-governor/create-financial-governor';
 import { FundingRequests } from './Components/Funding_requests/funding-requests/funding-requests';
 import { Taps } from './Components/Funding_requests/taps/taps';
 import { NewReplise } from './Components/Funding_requests/new-replise/new-replise';
@@ -41,6 +41,7 @@ import { PerformanceMetrics } from './Components/folder_Projects/File_details_pr
 import { ReportProject } from './Components/folder_Projects/File_details_project/report-project/report-project';
 import { ChallengeProject } from './Components/folder_Projects/File_details_project/challenge-project/challenge-project';
 import { PartnershipManagement } from './Components/partnership-management/partnership-management';
+import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
 
 @NgModule({
   declarations: [
@@ -76,6 +77,7 @@ import { PartnershipManagement } from './Components/partnership-management/partn
     ReportProject,
     ChallengeProject,
     PartnershipManagement,
+    DetailsFinancialConverner,
   ],
   imports: [
     CommonModule,
