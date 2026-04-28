@@ -85,12 +85,9 @@ li {
   border-radius: 10px;
 }
 
-
-
-
-@media(max-width:767px){
-  .wrapper_section{
-      margin: 10px !important;
-  padding: 10px !important;
+@media (max-width: 767px) {
+  .wrapper_section {
+    margin: 10px !important;
+    padding: 10px !important;
   }
 }
