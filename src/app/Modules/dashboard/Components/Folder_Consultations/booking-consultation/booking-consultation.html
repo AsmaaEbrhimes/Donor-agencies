@@ -1,0 +1,114 @@
+<section class="wrapper_section section_booking_consulations">
+  <div class="header_booking_consulations">
+    <div class="type_consulations">
+      <p>حجز استشارة</p>
+      <p>ولادة حلم للأستشارات الأدارية</p>
+      <h4>الأستشاريين</h4>
+    </div>
+
+    <div class="select_consultions">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="استراتيجية النجاح 24 خطوة لصياغة الخطة الاستراتيجية"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="نوع الاستشارة"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="deatails_need_booking">
+    <div class="upload-file">
+      <p class="title">ارفع الشاهد هنا</p>
+      <div class="file">
+        <div>
+          <h5>ارفع الملف</h5>
+          <p>PDF / Excel ( 10 MB Maximum)</p>
+        </div>
+        <svg-icon class="shape green-top-left" src="assets/Svg/upload-01.svg"> </svg-icon>
+      </div>
+    </div>
+
+    <div class="tool_project_need">
+      <p class="title">احتياج المشروع</p>
+      <textarea rows="10"> </textarea>
+    </div>
+  </div>
+  <div class="date_time_project">
+    <div class="time_project">
+      <h5>حدد الوقت</h5>
+      <div class="content_time">
+        <p>الوقت المتاح لهذا اليوم</p>
+        <div class="btn_time">
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+          <button>02 : 00 pm</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="date_project">
+      <h5>حدد التاريخ</h5>
+      <p-datepicker
+        [style]="{ width: '100%' }"
+        [minDate]="minDate()"
+        styleClass="custom-calendar w-full"
+        [inline]="true"
+        [showWeek]="false"
+        [firstDayOfWeek]="6"
+      >
+      </p-datepicker>
+    </div>
+  </div>
+
+  <div class="consultions">
+    <div class="btn_actions">
+      <button class="cansel_conslutions">الغاء</button>
+      <button class="booking_conslutions">احجز استشارتك</button>
+    </div>
+
+    <div class="consulations_name">
+      <div class="pref_data_consulations">
+        <h4>خالد القحطاني</h4>
+        <p>
+          هي شركة متخصصة في تطوير وتنمية الجهات غير الربحية في المملكة العربية السعودية، تلامس
+          الواقع وتواكب سرعة التطور.....
+        </p>
+        <div class="details_consultions">
+          <p>مدة الجلسة: <span>60</span> دقيقة</p>
+          <p>
+              <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+            5.0 ( 1670 )
+          </p>
+
+          <p>
+            <span>عدد الجمعيات</span>
+            <span>: 24 جمعية</span>
+          </p>
+        </div>
+      </div>
+      <svg-icon src="assets/Svg/Frame main.svg"> </svg-icon>
+    </div>
+  </div>
+</section>

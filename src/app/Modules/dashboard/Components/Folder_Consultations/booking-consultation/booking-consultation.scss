@@ -1,0 +1,176 @@
+@use '../../../../../../GlopalStyle.scss';
+
+.section_booking_consulations {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.type_consulations {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 10px;
+  gap: 10px;
+  h4 {
+    color: #124959;
+  }
+  p {
+    color: #646d74;
+  }
+}
+
+.select_consultions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.deatails_need_booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    border: 1px solid #9ac7cf;
+    border-radius: 10px;
+  }
+
+  .file {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    border: 1px solid #124959;
+    padding: 10px;
+    gap: 10px;
+    height: 80%;
+    padding-top: 20px;
+    p {
+      color: #124959;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    svg {
+      cursor: pointer !important;
+    }
+  }
+}
+
+.title {
+  color: #124959 !important;
+  font-weight: bold;
+}
+
+.date_time_project {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+h5 {
+  color: #424242;
+}
+.content_time {
+  border: 1px solid #124959;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  .btn_time {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 10px;
+    button {
+      background-color: #f1f5ff;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+}
+
+.consultions {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.consulations_name,
+.details_consultions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.consulations_name {
+  border: 2px solid #121f59;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.details_consultions {
+  justify-content: space-between;
+}
+
+.btn_actions {
+  width: 100%;
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+
+.cansel_conslutions{
+background-color: #E4E6E6;
+color: #124959;
+}
+
+
+.booking_conslutions{
+background-color: #124959;
+color: #E4E6E6;
+}
+
+
+
+
+
+@media(max-width:767px){
+  .type_consulations, .select_consultions,.consulations_name,.details_consultions{
+    flex-direction: column;
+  text-align: center;
+  margin: auto;
+  }
+.consultions , .deatails_need_booking,.date_time_project{
+  grid-template-columns: 1fr;
+}
+.consulations_name{
+  .pref_data_consulations{
+    order: 2;
+  }
+}
+
+.content_time {
+.btn_time{
+    grid-template-columns: 1fr;
+}
+}
+}
+
+
+@media(min-width:767px) and (max-width:1200px){
+
+}
