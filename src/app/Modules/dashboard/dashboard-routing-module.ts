@@ -12,6 +12,7 @@ import { DetailsProject } from './Components/folder_Projects/details-project/det
 import { PartnershipManagement } from './Components/partnership-management/partnership-management';
 import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
 import { Consultations } from './Components/Folder_Consultations/consultations/consultations';
+import { DetailsConsultations } from './Components/Folder_Consultations/details-consultations/details-consultations';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'Partnership_Management', component: PartnershipManagement },
       { path: 'details_funding_requests', component: DetailsFinancialConverner },
       { path: 'Consultations', component: Consultations },
+      { path: 'details_Consultations', component: DetailsConsultations },
     ],
   },
 ];
