@@ -1,0 +1,116 @@
+<section class="wrapper_sections_servies_consultions">
+  <div class="prf_details_consultions section_group">
+    <div class="header_prf_details_consultions">
+      <button>احجز استشارة</button>
+      <h4>ولادة حلم للأستشارات الأدارية</h4>
+    </div>
+
+    <div class="desc_prf_details_consultions">
+      <div class="desc">
+        <h5>ولادة حلم للأستشارات الأدارية</h5>
+        <p>
+          هي شركة متخصصة في تطوير وتنمية الجهات غير الربحية في المملكة العربية السعودية، تلامس
+          الواقع وتواكب سرعة التطور في القطاع الثالث من خلال أربعة جوانب: الإداري، التقني، المالي،
+          والإعلامي.
+        </p>
+      </div>
+      <svg-icon src="assets/Svg/Frame 1171275017.svg"> </svg-icon>
+    </div>
+  </div>
+
+  <div class="servies_consultions section_group">
+    <h4>الخدمات التي تقدمها الشركة</h4>
+    <div class="content_servies_consultions">
+      <div class="card">
+        <div>
+          <h5>
+            الجانب الأداري
+            <span></span>
+          </h5>
+          <p>
+            إعداد وتصميم الخطط الاستراتيجية والتشغيلية. إعداد وتصميم التقارير السنوية ودليل البرامج.
+            إعداد وتصميم الأدلة الإجرائية.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h5>
+            الجانب الأداري
+            <span></span>
+          </h5>
+          <p>
+            إعداد وتصميم الخطط الاستراتيجية والتشغيلية. إعداد وتصميم التقارير السنوية ودليل البرامج.
+            إعداد وتصميم الأدلة الإجرائية.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h5>
+            الجانب الأداري
+            <span></span>
+          </h5>
+          <p>
+            إعداد وتصميم الخطط الاستراتيجية والتشغيلية. إعداد وتصميم التقارير السنوية ودليل البرامج.
+            إعداد وتصميم الأدلة الإجرائية.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h5>
+            الجانب الأداري
+            <span></span>
+          </h5>
+          <p>
+            إعداد وتصميم الخطط الاستراتيجية والتشغيلية. إعداد وتصميم التقارير السنوية ودليل البرامج.
+            إعداد وتصميم الأدلة الإجرائية.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <diV class="feedbacak_custmer">
+    <h4>تقييمات وآراء العملاء</h4>
+    @if (data().length > 0) {
+      <p-carousel
+        [value]="data()"
+        [numVisible]="3"
+        [numScroll]="1"
+        [responsiveOptions]="responsiveOptions"
+      >
+        <ng-template let-item #item>
+          <div class="wrapper_feedbacak_custmer section_group">
+
+            <div class="card">
+              <div class="header">
+                <p>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                  <svg-icon src="assets/Svg/orange_start.svg"> </svg-icon>
+                </p>
+                <h5>عبدالله السبيعي</h5>
+              </div>
+              <p>
+                كانت تجربة رائعة جدًا مع فريق ولادة حلم، قاموا بمساعدتنا في إعداد الخطة الاستراتيجية
+                لجمعيتنا بشكل احترافي و بسيط. شكرًا لكم على الجودة العالية والاهتمام بالتفاصيل.
+              </p>
+            </div>
+
+          </div>
+        </ng-template>
+      </p-carousel>
+    } @else {
+      <div>
+        <app-no-data></app-no-data>
+      </div>
+    }
+  </diV>
+</section>

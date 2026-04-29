@@ -1,0 +1,140 @@
+@use '../../../../../../GlopalStyle.scss';
+.wrapper_sections_servies_consultions {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  .section_group {
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+.header_prf_details_consultions,
+.desc_prf_details_consultions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_prf_details_consultions {
+  h4 {
+    color: #124959;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  button {
+    border: 1px solid #124959;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #124959;
+    font-size: 500;
+    font-weight: 16px;
+    transition: 0.3s linear;
+    &:hover {
+      background-color: #124959;
+      color: #ffff;
+    }
+  }
+}
+
+.desc_prf_details_consultions {
+  margin-top: 20px;
+  gap: 10px;
+  h5 {
+    color: #124959;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  p {
+    color: #54657e;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.servies_consultions {
+  h4 {
+    color: #124959;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .content_servies_consultions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    .card {
+      display: flex;
+      align-items: flex-start;
+      span {
+        height: 6px;
+        width: 6px;
+        display: inline-block;
+        background-color: #124959;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      h5,
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #54657e;
+      }
+    }
+  }
+}
+.feedbacak_custmer {
+  h4 {
+    color: #124959;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    width: fit-content;
+    padding: 10px;
+    margin-left: auto;
+  }
+}
+.wrapper_feedbacak_custmer {
+  padding: 0 100px;
+  margin: 0 10px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .desc_prf_details_consultions,
+  .header_prf_details_consultions
+   {
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    svg {
+      order: 1;
+    }
+
+    .desc {
+      order: 2;
+    }
+  }
+  .servies_consultions {
+    .content_servies_consultions {
+      grid-template-columns: 1fr;
+    }
+  }
+  .wrapper_feedbacak_custmer{
+       .header {
+    flex-direction: column;
+  }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+}
