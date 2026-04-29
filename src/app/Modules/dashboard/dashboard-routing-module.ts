@@ -11,6 +11,7 @@ import { Projects } from './Components/folder_Projects/projects/projects';
 import { DetailsProject } from './Components/folder_Projects/details-project/details-project';
 import { PartnershipManagement } from './Components/partnership-management/partnership-management';
 import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
+import { Consultations } from './Components/Folder_Consultations/consultations/consultations';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'details_project', component: DetailsProject },
       { path: 'Partnership_Management', component: PartnershipManagement },
       { path: 'details_funding_requests', component: DetailsFinancialConverner },
+      { path: 'Consultations', component: Consultations },
     ],
   },
 ];
