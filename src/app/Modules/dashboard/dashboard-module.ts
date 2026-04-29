@@ -42,6 +42,8 @@ import { ReportProject } from './Components/folder_Projects/File_details_project
 import { ChallengeProject } from './Components/folder_Projects/File_details_project/challenge-project/challenge-project';
 import { PartnershipManagement } from './Components/partnership-management/partnership-management';
 import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
+import { Consultations } from './Components/Folder_Consultations/consultations/consultations';
+import { DetailsConsultations } from './Components/Folder_Consultations/details-consultations/details-consultations';
 
 @NgModule({
   declarations: [
@@ -78,6 +80,8 @@ import { DetailsFinancialConverner } from './Components/Folder_Financial_conveno
     ChallengeProject,
     PartnershipManagement,
     DetailsFinancialConverner,
+    Consultations,
+    DetailsConsultations,
   ],
   imports: [
     CommonModule,
