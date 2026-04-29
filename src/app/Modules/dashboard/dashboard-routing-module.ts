@@ -13,6 +13,7 @@ import { PartnershipManagement } from './Components/partnership-management/partn
 import { DetailsFinancialConverner } from './Components/Folder_Financial_convenor/details-financial-converner/details-financial-converner';
 import { Consultations } from './Components/Folder_Consultations/consultations/consultations';
 import { DetailsConsultations } from './Components/Folder_Consultations/details-consultations/details-consultations';
+import { BookingConsultation } from './Components/Folder_Consultations/booking-consultation/booking-consultation';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'details_funding_requests', component: DetailsFinancialConverner },
       { path: 'Consultations', component: Consultations },
       { path: 'details_Consultations', component: DetailsConsultations },
+      { path: 'booking_consultaions', component:BookingConsultation },
     ],
   },
 ];
