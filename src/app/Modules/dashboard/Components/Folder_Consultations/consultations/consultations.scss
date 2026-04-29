@@ -1,0 +1,184 @@
+@use '../../../../../../GlopalStyle.scss';
+.wrapper_consulations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.search_and_filter_Consultations {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.search_Consultations {
+  display: flex;
+  width: 100%;
+  direction: rtl;
+  gap: 10px;
+}
+
+.search_input {
+  border: 1px solid #9ac7cf;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  width: 30%;
+  input {
+    background-color: transparent;
+    width: 100%;
+  }
+  svg {
+    color: #54657e;
+    position: relative;
+    top: 4px;
+  }
+}
+
+::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  color: #54657e;
+}
+
+.filter_Consultations {
+  display: flex;
+  gap: 10px;
+  button {
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s linear;
+  }
+}
+
+.btn_filter {
+  display: flex;
+  align-items: center;
+  background-color: #124959;
+  color: #ffffff;
+  svg {
+    position: relative;
+    top: 5px;
+  }
+  &:hover {
+    border: 1px solid #124959;
+    color: #124959;
+    background-color: transparent;
+    .filter_icon {
+      ::ng-deep svg {
+        fill: currentColor;
+      }
+    }
+  }
+}
+
+.btn_Request_consultation {
+  border: 1px solid #124959;
+  color: #124959;
+  background-color: transparent;
+  &:hover {
+    background-color: #124959;
+    color: #ffffff;
+  }
+}
+
+.all_consulations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  direction: rtl;
+  height: 440px;
+  padding-top: 10px;
+  overflow: auto;
+  .card {
+    background-color: #f1f5ff;
+    border: 2px solid #9da8dab2;
+    padding: 10px;
+    border-radius: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s linear;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border-color: #1a4b5a;
+    }
+  }
+}
+
+.header_card_consulations {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .svg_icon {
+    position: relative;
+  }
+  .type_consulations {
+    position: absolute;
+    background-color: #dff6ec;
+    color: #268d4d;
+    border: 1px solid #268d4d;
+    bottom: -10px;
+    left: 0%;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    z-index: 33;
+    border-radius: 20px;
+  }
+}
+
+.stataus_consulations {
+  background-color: #124959;
+  color: #ffffff;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+h4 {
+  color: #045080;
+}
+
+@media (max-width: 767px) {
+  .all_consulations {
+    grid-template-columns: 1fr;
+    .card {
+      text-align: center;
+      margin: auto;
+    }
+  }
+  .search_and_filter_Consultations,
+  .header_card_consulations,
+  .search_Consultations,
+  .filter_Consultations {
+    flex-direction: column;
+  }
+  .header_card_consulations {
+    .svg_icon {
+      .type_consulations {
+        position: relative;
+        margin-bottom: 10px;
+        width: 50%;
+      }
+    }
+  }
+
+  .search_input {
+    width: 100%;
+  }
+
+  .search_and_filter_Consultations {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+  .all_consulations {
+    grid-template-columns: 1fr 1fr;
+  }
+}
