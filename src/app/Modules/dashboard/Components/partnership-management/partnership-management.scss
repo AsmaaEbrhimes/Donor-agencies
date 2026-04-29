@@ -234,3 +234,20 @@ h1 {
     direction: rtl;
   }
 }
+
+
+
+.search_input {
+  border: 1px solid #d5d7e9;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 12px;
+  width: 30%;
+  margin-left: auto;
+direction: rtl;
+  input {
+    background-color: transparent;
+    width: 100%;
+  }
+}
