@@ -45,7 +45,6 @@ import { DetailsFinancialConverner } from './Components/Folder_Financial_conveno
 import { Consultations } from './Components/Folder_Consultations/consultations/consultations';
 import { DetailsConsultations } from './Components/Folder_Consultations/details-consultations/details-consultations';
 import { BookingConsultation } from './Components/Folder_Consultations/booking-consultation/booking-consultation';
-
 @NgModule({
   declarations: [
     Panel,
