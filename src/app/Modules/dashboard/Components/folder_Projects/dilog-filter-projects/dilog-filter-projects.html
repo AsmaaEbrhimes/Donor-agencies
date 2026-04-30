@@ -13,7 +13,7 @@
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد هدف التمويل"
+          placeholder="نوع المشروع"
           [style]="{ width: '100%' }"
         />
       </div>
@@ -25,19 +25,19 @@
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد هدف التمويل"
+          placeholder="القطاع"
           [style]="{ width: '100%' }"
         />
       </div>
       <label>القطاع</label>
     </div>
 
-    <div class="card">
+      <div class="card">
       <div class="select">
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد انشطة التمويل"
+          placeholder="الجهة المنفذة"
           [style]="{ width: '100%' }"
         />
       </div>
@@ -49,31 +49,33 @@
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد انشطة التمويل"
+          placeholder="المنطقة / المحافظة"
           [style]="{ width: '100%' }"
         />
       </div>
       <label>المنطقة / المحافظة</label>
     </div>
 
-    <div class="card">
-      <div class="select">
-        <p-select
-          [options]=""
-          optionLabel="name"
-          placeholder="حدد انشطة التمويل"
-          [style]="{ width: '100%' }"
-        />
-      </div>
-      <label>حدد انشطة التمويل</label>
-    </div>
 
     <div class="card">
       <div class="select">
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد انشطة التمويل"
+          placeholder="حالة المشروع"
+          [style]="{ width: '100%' }"
+        />
+      </div>
+      <label>حالة المشروع</label>
+    </div>
+
+
+    <div class="card">
+      <div class="select">
+        <p-select
+          [options]=""
+          optionLabel="name"
+          placeholder="نطاق الميزانية"
           [style]="{ width: '100%' }"
         />
       </div>
@@ -85,7 +87,7 @@
         <p-select
           [options]=""
           optionLabel="name"
-          placeholder="حدد انشطة التمويل"
+          placeholder="فترة التنفيذ"
           [style]="{ width: '100%' }"
         />
       </div>
@@ -94,14 +96,9 @@
 
     <div class="card">
       <div class="select">
-        <p-select
-          [options]=""
-          optionLabel="name"
-          placeholder="حدد انشطة التمويل"
-          [style]="{ width: '100%' }"
-        />
+        <input placeholder="مستوى الأداء"/>
       </div>
-      <label>فترة التنفيذ</label>
+      <label>مستوى الأداء</label>
     </div>
     <diV class="flex_btn">
       <button class="close_btn" (click)="onDialogCloseHandler()">أغلاق</button>
